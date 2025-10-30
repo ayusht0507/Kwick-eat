@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KwickEat | Pre-Order Food in KIET</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Kwick<span>Eat</span></div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#order">Order</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Skip the Queue, <br><span>Grab Your Food Faster!</span></h1>
+      <p>Pre-order your meal from your favorite KIET stalls like Nescafe, Canteen & more.</p>
+      <button id="explore-btn">Explore Menu</button>
+    </div>
+  </section>
+
+  <!-- MENU SECTION -->
+  <section id="menu" class="menu">
+    <h2>Today's Menu</h2>
+    <div class="menu-container">
+      <div class="item">
+        <img src="https://i.imgur.com/FZy9JzS.jpg" alt="Cold Coffee">
+        <h3>Cold Coffee</h3>
+        <p>₹50</p>
+        <button class="order-btn">Pre-Order</button>
+      </div>
+      <div class="item">
+        <img src="https://i.imgur.com/kV7XW4R.jpg" alt="Veg Sandwich">
+        <h3>Veg Sandwich</h3>
+        <p>₹45</p>
+        <button class="order-btn">Pre-Order</button>
+      </div>
+      <div class="item">
+        <img src="https://i.imgur.com/5vJk8cv.jpg" alt="Maggie">
+        <h3>Maggi</h3>
+        <p>₹40</p>
+        <button class="order-btn">Pre-Order</button>
+      </div>
+      <div class="item">
+        <img src="https://i.imgur.com/B1Yk7Ty.jpg" alt="Pasta">
+        <h3>White Sauce Pasta</h3>
+        <p>₹80</p>
+        <button class="order-btn">Pre-Order</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORDER SECTION -->
+  <section id="order" class="order">
+    <h2>Place Your Order</h2>
+    <form id="orderForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="College Email" required>
+      <select required>
+        <option value="">Select Item</option>
+        <option>Cold Coffee</option>
+        <option>Veg Sandwich</option>
+        <option>Maggi</option>
+        <option>White Sauce Pasta</option>
+      </select>
+      <input type="time" required>
+      <button type="submit">Confirm Order</button>
+    </form>
+    <p id="successMsg"></p>
+  </section>
+
+  <!-- CONTACT -->
+  <footer id="contact">
+    <h3>Contact Us</h3>
+    <p>Email: support@kwickeat.in | Location: KIET Canteen Area</p>
+    <p>© 2025 KwickEat. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
